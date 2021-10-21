@@ -4,13 +4,13 @@ import { WebPushError } from 'web-push';
 const router = express.Router();
 
 // Subscribe Route
-app.post('/subscribe', async(req, res) => {
+router.post('/subscribe', async(req, res) => {
     // Get pushSubscription object
     try {
-        const subscription = req.body;
+        const subscription = await req.body;
 
         // send 201 - resource created
-        await res.status(201).json({});
+         res.status(201).json({});
 
         // create payload
         const payload = JSON.stringify({ title: 'Push Test'})
