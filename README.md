@@ -11,7 +11,7 @@ The project is built with nodejs for push notification application
 
 ## Install
 
-    $ git clone 
+    $ git clone https://github.com/omowonuola/push-notification-nodejs.git
     $ yarn install or npm install
 
 
