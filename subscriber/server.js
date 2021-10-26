@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors';
 
 import path from 'path'
-import susbsriberRoutes from './routes.js'
+import subscriberRoutes from './routes.js'
 import colors from 'colors'
 
 
