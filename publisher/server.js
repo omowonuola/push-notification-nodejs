@@ -21,5 +21,5 @@ const PORT = 8000
 
 app.listen(
     PORT, 
-    console.log(`server is running in development mode on port ${PORT}`.yellow.bold)
+    console.log(`server is running in publisher mode on port ${PORT}`.yellow.bold)
 )

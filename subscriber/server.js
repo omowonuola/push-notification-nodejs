@@ -1,6 +1,5 @@
 import express from 'express'
 import cors from 'cors';
-
 import path from 'path'
 import subscriberRoutes from './routes.js'
 import colors from 'colors'
@@ -21,5 +20,5 @@ const PORT = 9000
 
 app.listen(
     PORT, 
-    console.log(`server is running in development mode on port ${PORT}`.yellow.bold)
+    console.log(`server is running in subscriber mode on port ${PORT}`.yellow.bold)
 )
