@@ -4,9 +4,30 @@ The project is built with nodejs for push notification application
 
 ## Features
 
-    $ subcribe to a topic POST(http://localhost:8000/subscribe/development)
-    $ publish a topic POST(http://localhost:8000/publish/development)
-    $ subscriber route POST(http://localhost:9000/subscriber) 
+    $ subcribe to a topic 
+    
+    POST(http://localhost:8000/subscribe/:topic)
+    body{
+           {
+            "url": "http://localhost:9000/subscriber"
+           }
+    }
+    
+    $ publish a topic 
+    
+    POST(http://localhost:8000/publish/development)
+    body{
+           {
+            "url": "http://localhost:9000/"
+           }
+    }
+    
+    $ subscriber route POST(http://localhost:9000/subscriber)  
+    body{
+           {
+            "url": "http://localhost:9000/sam"
+           }
+    }
 
 
 ## Install
