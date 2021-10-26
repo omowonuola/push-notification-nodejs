@@ -15,7 +15,7 @@ The project is built with nodejs for push notification application
     
     $ publish a topic 
     
-    POST(http://localhost:8000/publish/development)
+    POST(http://localhost:8000/publish/:topic)
     body{
            {
             "url": "http://localhost:9000/"
@@ -27,7 +27,8 @@ The project is built with nodejs for push notification application
     POST(http://localhost:9000/subscriber)  
     body{
            {
-            "url": "http://localhost:9000/sam"
+                "subscriber": "dammy",
+                "body": {}
            }
     }
 
