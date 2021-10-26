@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors';
 import path from 'path'
-import serverRoutes from './routes.js'
+import publisherRoutes from './routes.js'
 import colors from 'colors'
 
 
@@ -15,7 +15,7 @@ app.use(express.urlencoded({limit: '50mb', extended: true }));
 app.use(express.json({limit: '50mb'}));
 app.use(cors());
 
-app.use('/', serverRoutes)
+app.use('/', publisherRoutes)
 
 const PORT = 8000
 
