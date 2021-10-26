@@ -22,7 +22,9 @@ The project is built with nodejs for push notification application
            }
     }
     
-    $ subscriber route POST(http://localhost:9000/subscriber)  
+    $ subscriber route 
+    
+    POST(http://localhost:9000/subscriber)  
     body{
            {
             "url": "http://localhost:9000/sam"
