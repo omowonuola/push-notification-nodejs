@@ -33,6 +33,7 @@ The project is built with nodejs for push notification application
             "topic": "development",
             "message": "Topic sent to 3 subscriber(s)"
         } 
+        
     $ subscriber route 
     
     POST(http://localhost:9000/subscriber)  
