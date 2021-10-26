@@ -13,6 +13,12 @@ The project is built with nodejs for push notification application
            }
     }
     
+    response: 
+        {
+            "topic": "development",
+            "url": "http://localhost:9000/sam"
+        }
+    
     $ publish a topic 
     
     POST(http://localhost:8000/publish/:topic)
@@ -22,6 +28,11 @@ The project is built with nodejs for push notification application
            }
     }
     
+    response: 
+        {
+            "topic": "development",
+            "message": "Topic sent to 3 subscriber(s)"
+        } 
     $ subscriber route 
     
     POST(http://localhost:9000/subscriber)  
@@ -32,6 +43,11 @@ The project is built with nodejs for push notification application
            }
     }
 
+    response: 
+        {
+            "subscriber": "dammy",
+            "body": {}
+        }
 
 ## Install
 
